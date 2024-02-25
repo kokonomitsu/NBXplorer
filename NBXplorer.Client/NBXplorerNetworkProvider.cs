@@ -8,29 +8,30 @@ namespace NBXplorer
 		public NBXplorerNetworkProvider(ChainName networkType)
 		{
 			NetworkType = networkType;
-			InitArgoneum(networkType);
-			InitBitcoin(networkType);
-			InitBitcore(networkType);
-			InitLitecoin(networkType);
-			InitDogecoin(networkType);
-			InitBCash(networkType);
-			InitGroestlcoin(networkType);
-			InitBGold(networkType);
-			InitDash(networkType);
-			InitTerracoin(networkType);
-			InitPolis(networkType);
-			InitMonacoin(networkType);
-			InitFeathercoin(networkType);
-			InitUfo(networkType);
-			InitViacoin(networkType);
-			InitMonoeci(networkType);
-			InitGobyte(networkType);
-			InitColossus(networkType);
-			InitChaincoin(networkType);
-			InitLiquid(networkType);
-			InitQtum(networkType);
-			InitAlthash(networkType);
-			InitMonetaryUnit(networkType);
+			//InitArgoneum(networkType);
+			//InitBitcoin(networkType);
+			//InitBitcore(networkType);
+			//InitLitecoin(networkType);
+			//InitDogecoin(networkType);
+			//InitBCash(networkType);
+			//InitGroestlcoin(networkType);
+			//InitBGold(networkType);
+			//InitDash(networkType);
+			//InitTerracoin(networkType);
+			//InitPolis(networkType);
+			//InitMonacoin(networkType);
+			//InitFeathercoin(networkType);
+			//InitUfo(networkType);
+			//InitViacoin(networkType);
+			//InitMonoeci(networkType);
+			//InitGobyte(networkType);
+			//InitColossus(networkType);
+			//InitChaincoin(networkType);
+			//InitLiquid(networkType);
+			//InitQtum(networkType);
+			//InitAlthash(networkType);
+			//InitMonetaryUnit(networkType);
+			InitBigcoin(networkType);
 			foreach (var chain in _Networks.Values)
 			{
 				chain.DerivationStrategyFactory ??= chain.CreateStrategyFactory();

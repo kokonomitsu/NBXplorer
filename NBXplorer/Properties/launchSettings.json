@@ -12,7 +12,17 @@
       "applicationUrl": "http://localhost:4774",
       "launchUrl": "v1/cryptos/btc/status"
     },
-
+    "NBXplorer - BBTC on Testnet": {
+      "commandName": "Project",
+      "commandLineArgs": "--chains=bbtc --network=testnet",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "NBXPLORER_EXPOSERPC": "true"
+      },
+      "applicationUrl": "http://localhost:4774",
+      "launchUrl": "v1/cryptos/ltc/status"
+    },
     "NBXplorer - BTC+LTC on Regtest": {
       "commandName": "Project",
       "commandLineArgs": "--chains=btc,ltc --network=regtest",
@@ -30,7 +40,7 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development",
         "NBXPLORER_NETWORK": "regtest",
-        "NBXPLORER_CHAINS":"lbtc",
+        "NBXPLORER_CHAINS": "lbtc",
         "NBXPLORER_LBTCRPCURL": "http://127.0.0.1:19332/",
         "NBXPLORER_LBTCNODEENDPOINT": "127.0.0.1:19444",
         "NBXPLORER_LBTCRPCUSER": "liquid",
